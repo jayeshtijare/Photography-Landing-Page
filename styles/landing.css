@@ -1,0 +1,60 @@
+@keyframes intro-content {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes intro-header {
+  0% {
+    transform: translateY(40px) scale(0.6); }
+  100% {
+    transform: translate(0) scale(1); } }
+
+.image {
+  background-image: url(../images/bg-front.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  position: fixed;
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  animation: intro-content 0.5s 0s; }
+
+#landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  transition: all 0.4s;
+  position: relative;
+  z-index: 2;
+  user-select: none; }
+  #landing h1 {
+    font-size: px-to-rem(50px);
+    margin-bottom: px-to-rem(16px);
+    animation-name: intro-header;
+    animation-duration: 1s;
+    animation-delay: .1s;
+    border-radius: 13px 13px 0 0;
+    padding: 10px; }
+  #landing p {
+    width: px-to-rem(430px);
+    text-align: center;
+    animation: intro-content 1.5s 0.1s;
+    padding: 10px 20px 60px 20px;
+    line-height: 35px;
+    border-radius: 0px 0px 13px 13px; }
+  #landing button {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 10px 4vw;
+    margin-top: px-to-rem(14px);
+    border-radius: 5px; }
+    #landing button:hover {
+      opacity: 0.5;
+      color: black;
+      cursor: pointer; }

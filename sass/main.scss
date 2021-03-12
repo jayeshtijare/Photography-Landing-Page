@@ -1,0 +1,38 @@
+@import "functions.scss";
+@import "landing.scss";
+@import "info-sec.scss";
+@import "dimmedback.scss";
+@import "current-users.scss";
+@import "location.scss";
+@import "review.scss";
+@import "deals.scss";
+@import "footer.scss";
+body, button, input{
+    font-family: "Questrial", sans-serif;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    margin:0;
+    width: 100vw;
+}
+h1, h2, h3, h4, h5, h6, p, figure{
+    font-weight: normal;
+    margin: 0;
+    color: white;
+}
+button, input{
+    outline: none;
+    border: none;
+    color: inherit;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+p,a,button, input{
+    font-size: px-to-rem(18px);
+}

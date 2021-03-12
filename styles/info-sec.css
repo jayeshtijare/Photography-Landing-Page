@@ -1,0 +1,31 @@
+#info-section {
+  color: #cfcfcf;
+  margin: px-to-rem(82px); }
+  #info-section article {
+    display: flex;
+    margin: px-to-rem(32px);
+    align-items: center; }
+    #info-section article figure {
+      width: 48%;
+      height: px-to-rem(222px);
+      background-size: cover;
+      background-position: center;
+      flex-shrink: 0;
+      transition: all .3s; }
+      #info-section article figure:hover {
+        transform: scale(1.04); }
+    #info-section article div {
+      margin-left: px-to-rem(80px); }
+      #info-section article div h2 {
+        font-size: px-to-rem(30px);
+        margin-bottom: px-to-rem(8px); }
+      #info-section article div p {
+        font-size: px-to-rem(16px);
+        line-height: 220%;
+        width: 70%; }
+  #info-section article:nth-of-type(1) figure {
+    background-image: url("https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=375&q=80"); }
+  #info-section article:nth-of-type(2) figure {
+    background-image: url("https://images.unsplash.com/photo-1579597647126-bd071a22a023?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"); }
+  #info-section article:nth-of-type(3) figure {
+    background-image: url("https://cdn.pixabay.com/photo/2018/06/03/14/42/forest-3450706_960_720.jpg"); }

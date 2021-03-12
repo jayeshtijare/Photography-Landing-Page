@@ -1,0 +1,131 @@
+.dimmed {
+  width: 110vw;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.6s;
+  visibility: hidden; }
+
+#page {
+  visibility: hidden;
+  max-height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden; }
+
+#first {
+  position: relative;
+  z-index: 3;
+  color: white;
+  padding: 62px 0 0 92px;
+  box-sizing: border-box;
+  width: 94%;
+  height: 100vh;
+  display: inline-block;
+  opacity: 0;
+  transition: all 1s 0.5s; }
+  #first nav {
+    display: inline-block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: px-to-rem(18px);
+    padding-right: px-to-rem(72px); }
+    #first nav li {
+      display: inline-block;
+      padding: 0 px-to-rem(30px); }
+    #first nav li:first-child {
+      padding-left: 0; }
+    #first nav a {
+      transition: opacity .1s; }
+      #first nav a:hover {
+        opacity: 0.8; }
+  #first article {
+    margin-top: px-to-rem(157px); }
+    #first article h1 {
+      font-size: px-to-rem(36px); }
+    #first article p {
+      margin: px-to-rem(40px) 0;
+      width: px-to-rem(640px);
+      line-height: 160%; }
+    #first article button {
+      background-color: #404040;
+      color: #e8fff7;
+      padding: .8em 1.4em;
+      padding-right: 16em;
+      transition: opacity 0.2s; }
+      #first article button:hover {
+        opacity: .6; }
+
+#register {
+  width: 150%;
+  display: flex;
+  position: absolute;
+  transition: all 0.6s 1s;
+  transform: translateX(200px); }
+  #register #empty-section {
+    width: 94%;
+    height: 100vh; }
+  #register #visible-sec {
+    width: 6%;
+    height: 100vh;
+    background-color: rgba(127, 127, 127, 0.2);
+    display: flex;
+    opacity: .8;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #f4f4f4;
+    font-size: px-to-rem(18px);
+    align-items: center;
+    transition: opacity 1.4s; }
+    #register #visible-sec span {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      margin: 8vh 1.7vw;
+      transition: opacity .6s; }
+      #register #visible-sec span i {
+        font-size: px-to-rem(25px);
+        margin-bottom: px-to-rem(14px); }
+    #register #visible-sec h4 {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: opacity .6s;
+      margin: 2vh 1.7vw; }
+  #register #form-sec {
+    background-color: rgba(127, 127, 127, 0.2);
+    height: 100vh;
+    width: 50%;
+    color: white;
+    box-sizing: border-box;
+    padding-top: 30vh;
+    opacity: .8; }
+    #register #form-sec h2 {
+      font-size: px-to-rem(30px);
+      margin-bottom: px-to-rem(52px); }
+    #register #form-sec input:not([type="submit"]) {
+      display: block;
+      background-color: transparent;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+      margin: px-to-rem(50px) 0;
+      padding: 6px 18px; }
+    #register #form-sec input[type="submit"] {
+      background-color: white;
+      color: #3a3a3a;
+      padding: 0.4em 5.4em;
+      border-radius: 4px;
+      margin-left: 8px;
+      margin-bottom: px-to-rem(66px);
+      transition: all 0.3s; }
+      #register #form-sec input[type="submit"]:hover {
+        opacity: 0.8;
+        transform: scale(1.1); }
+    #register #form-sec ::placeholder {
+      color: inherit; }
+    #register #form-sec a {
+      color: #b29dff; }
+      #register #form-sec a:hover {
+        opacity: .7; }
